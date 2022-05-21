@@ -1,4 +1,15 @@
-import { Component } from '@angular/core';
+import { ApplicationRef, Component } from '@angular/core';
+
+enum TestEnum {
+  Apple = 0,
+  Orrange,
+  Grapefruits,
+}
+
+type TTestType = {
+  id: string;
+  name: string;
+};
 
 @Component({
   selector: 'app-root',
@@ -9,6 +20,7 @@ export class AppComponent {
   title: string = '';
 
   upper() {
+    var tmp = 0;
     this.title = this.title.toUpperCase();
   }
 }

@@ -17,6 +17,8 @@
       "extends": [
         "plugin:@angular-eslint/recommended",
         "plugin:@angular-eslint/template/process-inline-templates",
+        "plugin:import/recommended",
+        "airbnb-typescript/base",
         "plugin:prettier/recommended"
       ],
       "rules": {
@@ -34,6 +36,21 @@
             "type": "element",
             "prefix": "app",
             "style": "kebab-case"
+          }
+        ],
+        "no-restricted-syntax": [
+          "error",
+          {
+            "selector": "TSEnumDeclaration",
+            "message": "Don't declare enums. Please use types."
+          },
+          {
+            "selector": "TSInterfaceDeclaration",
+            "message": "Don't declare interfaces. Please use types."
+          },
+          {
+            "selector": "VariableDeclaration[kind='var']",
+            "message": "Don't declare variables by 'var'. Please use 'const' or 'let'."
           }
         ]
       }
