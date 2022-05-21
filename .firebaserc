@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "primeng-ed2ee": {
+      "hosting": {
+        "primeng": [
+          "primeng-ed2ee"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "primeng-ed2ee"
+  }
+}
