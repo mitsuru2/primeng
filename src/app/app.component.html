@@ -1,8 +1,9 @@
+<h1>Hello, PrimeNG</h1>
 <span class="p-float-label">
   <input id="in_title" type="text" pInputText [(ngModel)]="title" />
   <label for="in_title">Title</label>
 </span>
 <br />
-<button pButton type="button" label="PrimeNG" (click)="upper()"></button>
+<button id="button_upper" pButton type="button" label="PrimeNG" (click)="upper()"></button>
 <br />
-<p>{{ title }}</p>
+<p id="p_title">{{ title }}</p>
