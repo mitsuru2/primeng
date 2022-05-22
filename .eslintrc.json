@@ -52,6 +52,14 @@
             "selector": "VariableDeclaration[kind='var']",
             "message": "Don't declare variables by 'var'. Please use 'const' or 'let'."
           }
+        ],
+        "max-lines-per-function": [
+          "error", 
+          {
+            "max": 150,
+            "skipBlankLines": true, 
+            "skipComments": true
+          }
         ]
       }
     },
